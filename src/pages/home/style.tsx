@@ -68,8 +68,8 @@ export const HeaderButtonsArea = styled(Flex, {
 export const UserImage = styled("img", {
   borderRadius: "50%",
   "@mobile": {
-    width: "2.25rem",
-    height: "2.25rem",
+    width: "2.55rem",
+    height: "2.55rem",
   },
 });
 

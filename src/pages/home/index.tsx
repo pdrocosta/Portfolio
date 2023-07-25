@@ -41,25 +41,22 @@ export const Home = (): JSX.Element => {
                 src={`https://github.com/${userData.githubUser}.png`}
                 alt={userData.nameUser}
                 title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
+                width={"56px"}
+                height={"56px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Hey, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+            I develop{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+               everything 
               </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
+              for the  web!{" "}
+
+    
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            Night owl, dark schemes and long runs. Working from Curitiba, Brazil. Full Stack Web Developer. Wanna see more?
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -69,9 +66,9 @@ export const Home = (): JSX.Element => {
                 See my portfolio source code
               </Button>
               <Button
-                color="grey5"
+                color="grey4"
                 as="a"
-                css={{ "&:hover": { color: "$grey1" } }}
+                css={{ "&:hover": { color: "$grey2" } }}
                 type="circle"
                 target="_blank"
                 href={gihubUrl}
@@ -91,8 +88,8 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                My projects
+              <Text as="h1" type="heading4" color="grey4">
+              Here are a few technologies I've been working on recently:
               </Text>
               <Text as="p" type="body1" color="grey2">
                 Some of my{" "}

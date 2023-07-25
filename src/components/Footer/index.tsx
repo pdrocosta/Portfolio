@@ -3,9 +3,10 @@ import { Text } from "@/styles/Text";
 import { Footer as FooterWrapper } from "./style";
 import { UserImage } from "@/pages/home/style";
 import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub } from "react-icons/fa";
 import { Button } from "@/styles/Buttons";
 // import { HandEffect } from "../HandEffect";
+const gihubUrl = `https://github.com/${userData.githubUser}`;
 
 export const Footer = (): JSX.Element => {
   return (
@@ -21,7 +22,7 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              Get in touch! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
               Follow me on my social networks and let's talk
@@ -36,24 +37,6 @@ export const Footer = (): JSX.Element => {
           }}
         >
           <Button
-            className="instagram"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://instagram.com/${userData.instagramUser}`}
-          >
-            <FaInstagram />
-          </Button>
-          <Button
-            className="facebook"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://fb.com/${userData.facebookUser}`}
-          >
-            <FaFacebookF />
-          </Button>
-          <Button
             className="linkedin"
             type="circle"
             as="a"
@@ -62,6 +45,16 @@ export const Footer = (): JSX.Element => {
           >
             <FaLinkedinIn />
           </Button>
+          <Button
+                color="grey4"
+                as="a"
+                css={{ "&:hover": { color: "$grey2" } }}
+                type="circle"
+                target="_blank"
+                href={gihubUrl}
+              >
+                <FaGithub />
+              </Button>
         </Flex>
       </Container>
     </FooterWrapper>
