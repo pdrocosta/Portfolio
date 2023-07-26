@@ -30,7 +30,7 @@ import {
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
   const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
-
+  const resumeUrl = `https://docs.google.com/document/d/e/2PACX-1vS2tRqtHyPAeBLij1qaF6ICbA7Zs9H8AsFLOldChXdRvYew-y_jaFuz-mpjydgXtZF-cUoIzZ8M1vhw/pub`
   return (
     <main id="home">
       <Header>
@@ -56,14 +56,18 @@ export const Home = (): JSX.Element => {
     
             </Text>
             <Text type="body1" color="grey2">
-            Night owl, dark schemes and long runs. Working from Curitiba, Brazil. Full Stack Web Developer. Wanna see more?
+              Night owl, dark schemes and long runs. 23, working from Curitiba, Brazil. Full Stack Web Developer. Driven by curiosity and will.
+              Wanna see more?
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" type="primary" href="#projects">
-                See Projects
+              <Button as="a" type="primary" href="#projects" >
+                Projects
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Portfolio
+              </Button>
+              <Button as="a" type="outline" target="_blank" href={resumeUrl}>
+                Resume
               </Button>
               <Button
                 color="grey4"
